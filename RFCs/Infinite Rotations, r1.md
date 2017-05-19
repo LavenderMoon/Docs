@@ -1,4 +1,4 @@
-# Infinite Rotation (revision 1) Proposal (Request for Comments)
+# Infinite Rotation RFC, Revision 1
 
 ## Abstract
 
@@ -39,7 +39,7 @@ In order to parse the rotation lump:
 * If `version` is equal to 1:
 	* Set variable `rots` to the value of the next four bytes, interpreted as a big-endian value.
 	* Until you reach the end-of-file:
-		* Set variable `rot` to the value of the next byte.
+		* Set variable `rot` to the value of the next character.
 		* If `rot` equals `0x00`:
 			* Set variable `sprite` to the value of the next four characters.
 			* Set variable `rot` to the value of the next character.
